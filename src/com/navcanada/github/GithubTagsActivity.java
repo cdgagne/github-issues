@@ -38,10 +38,6 @@ public class GithubTagsActivity extends Activity {
     		Intent intent = new Intent(GithubTagsActivity.this, GithubBasicAuthActivity.class);
     		startActivity(intent);
     	}
-/*    	if (!settings.contains("accessToken")) {
-    		Intent intent = new Intent(GithubTagsActivity.this, GithubOAuthActivity.class);
-    		startActivity(intent);
-    	}*/
     	else {
     		try {
     			setContentView(R.layout.taglist);
