@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+	<TextView
+	    android:id="@+id/usernameLabel"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="Github Username" />
+
+	<EditText
+	    android:id="@+id/usernameEntry"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/usernameLabel"
+	    android:background="@android:drawable/editbox_background" />
+
+	<TextView
+	    android:id="@+id/passwordLabel"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/usernameEntry"
+	    android:text="Github Password" />
+
+	<EditText
+	    android:id="@+id/passwordEntry"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/passwordLabel"
+	    android:background="@android:drawable/editbox_background"
+	    android:password="true" />
+
+	<Button
+	    android:id="@+id/okButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_below="@id/passwordEntry"
+	    android:layout_marginLeft="10dip"
+	    android:text="OK" />
+
+	<Button
+	    android:id="@+id/cancelButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignTop="@id/okButton"
+    	android:layout_toLeftOf="@id/okButton"
+    	android:text="Cancel" />
+
+</RelativeLayout>
