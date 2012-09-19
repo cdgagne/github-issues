@@ -1,3 +1,6 @@
+Overview
+========
+
 This app provides a quick and easy way to browse your GitHub issues by label.  We use labels to categorize issues, primarily for release planning, but also for things like differentiating between defects and stories.
 
 The app requires your GitHub username and password to be entered.  Authentication occurs using HTTP Basic (OAuth support coming soon.)
@@ -5,3 +8,8 @@ The app requires your GitHub username and password to be entered.  Authenticatio
 The main activity is a label browser.  Select a label and a list of issues is displayed (currently only Closed issues.)
 
 The app was developed in a few days during a hack sprint primarily as an excuse to develop a native Android app after developing some simple mobile web apps.
+
+Dependencies
+============
+
+Makes use of the google-gson library for consuming json formatted messages.
